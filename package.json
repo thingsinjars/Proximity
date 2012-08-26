@@ -1,0 +1,21 @@
+{
+  "name": "proximity",
+  "version": "0.0.1",
+  "author": "Simon <simon@thingsinjars.com>",
+  "description": "Simple proximity search example",
+  "contributors": [ 
+    {
+      "name": "Simon Madine",
+      "email": "simon@thingsinjars.com"
+    } 
+  ],
+  "dependencies" : {
+    "twitter"   :  "*",
+    "mongodb" :  "*",
+    "express" :  "*"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.4"
+  }
+}

@@ -13,7 +13,7 @@ var twit = new twitter({
 	consumer_key: 'REDACTED',
 	consumer_secret: 'REDACTED',
 	access_token_key: 'REDACTED',
-	access_token_secret: 'REDACTED'
+	access_token_secret: 'pyComKKNYmW79ampBwLwsOJQNSf4VL8Z6OCldFzIfU0'
 });
 
 // Open the proximity database
@@ -40,8 +40,4 @@ db.open(function() {
 			});
 		});
 	});
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> Ingest, basic API

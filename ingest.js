@@ -1,6 +1,6 @@
 var util = require('util'),
 	twitter = require('twitter'),
-	// $ = require("mongous").Mongous,
+    config = require('./config'),
 	count = 0,
 	incount = 0;
 
@@ -9,12 +9,7 @@ var mongodb = require("mongodb"),
 	db = new mongodb.Db("proximity", mongoserver);
 
 
-var twit = new twitter({
-	consumer_key: 'REDACTED',
-	consumer_secret: 'REDACTED',
-	access_token_key: 'REDACTED',
-	access_token_secret: 'REDACTED'
-});
+var twit = new twitter(config.twitter);
 
 // Open the proximity database
 db.open(function() {
@@ -40,8 +35,4 @@ db.open(function() {
 			});
 		});
 	});
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> Ingest, basic API
